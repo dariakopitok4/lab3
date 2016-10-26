@@ -41,12 +41,16 @@ int _tmain(int argc, _TCHAR* argv[])
 	for (int i = 0; i < countOfBooks; i++) {
 		bookAuthor = books[i].getAuthor();
 		if (bookAuthor == searchAuthor){
+			cout << "Book(s) this author:" << endl;
+			cout << "  " << endl;
 			books[i].displayBook();
 		}
 	};
 	for (int i = 0; i < countOfBooks; i++) {
 		bookYear = books[i].getYear_publishing();
 		if (bookYear >= searchYear){
+			cout << "Book(s) after this year:" << endl;
+			cout << "  " << endl;
 			books[i].displayBook();
 		}
 	};
